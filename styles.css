@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Calibri, sans-serif;
+  background-color: #ffffff;
+  color: #131c26;
+}
+
+/* HEADER */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  flex-wrap: wrap;
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+}
+
+.site-header h1 {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  flex-grow: 1;
+  margin-left: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #5C2E5C;
+  font-weight: bold;
+}
+
+/* PROMO BAR */
+.promo-bar {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+  padding: 1rem 2rem;
+  background-color: #3E5641;
+}
+
+.promo-item {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 6px;
+  color: #3E5641;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* HERO SECTION */
+.hero-section {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.hero-img {
+  flex: 1;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+}
+
+.hero-img.left {
+  background-image: url('https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg');
+}
+
+.hero-img.right {
+  background-image: url('https://images.pexels.com/photos/590493/pexels-photo-590493.jpeg');
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-btn {
+  background-color: #3F5461;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* WHY SHOP HERE */
+.why-shop {
+  padding: 3rem 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.why-shop h2 {
+  font-size: 24px;
+  margin-bottom: 1rem;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.value-box {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  font-weight: bold;
+}
+
+/* CATEGORIES */
+.categories {
+  padding: 2rem;
+  background-color: #3f5461;
+  text-align: center;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.category-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-weight: bold;
+  color: #5C2E5C;
+}
+
+}
+
+/* FOOTER */
+footer {
+  background-color: #742C36;
+  padding: 2rem;
+  text-align: center;
+  color: white;
+}
+
+
+footer input[type='email'] {
+  padding: 0.5rem;
+  width: 250px;
+  max-width: 90%;
+  margin-top: 0.5rem;
+}
+
+footer button {
+  padding: 0.5rem 1rem;
+  background: #5C2E5C;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-left: 0.5rem;
+}
+
+.footer-links {
+  margin-top: 1rem;
+}
+
+.footer-links a {
+  color: #2E2E4E;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+.socials {
+  font-size: 24px;
+  margin-top: 1rem;
+}
+
+.gallery-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.view-cart {
+  background: #5C2E5C;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.product-card {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  text-align: center;
+  padding: 1rem;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.product-img {
+  width: 100%;
+  height: 180px;
+  background-color: #eee;
+  margin-bottom: 1rem;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  margin: 0.5rem 0;
+}
+
+.product-card p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.product-card button {
+  background-color: #3F5461;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
